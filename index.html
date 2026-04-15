@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Union Council | RAIT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #161b22;
+    }
+    header img {
+      height: 70px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #58a6ff;
+      font-weight: bold;
+    }
+    .home {
+      background: url('/mnt/data/suc white logo z final 1.png') no-repeat center;
+      background-size: contain;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .home h1 {
+      font-size: 3rem;
+      background: linear-gradient(45deg, #58a6ff, #d2a8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .team-grid, .events-grid, .artists-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #21262d;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .contact iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 20px;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/suc white logo z final 1.png" alt="SUC Logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#events">Events</a>
+      <a href="#horizon">Horizon</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="home" id="home">
+    <h1>Welcome to the Student Union Council (SUC)</h1>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>The Student Union Council of RAIT (Established in 1983) is the vibrant heartbeat of student life. We foster unity, organize unforgettable events, and lead with purpose. <br><br>Want to be a part of us?<br><a href="https://forms.gle/your-form-link" target="_blank">Join Here</a> | <a href="https://chat.whatsapp.com/your-group-link" target="_blank">WhatsApp Group</a></p>
+  </section>
+
+  <section id="team">
+    <h2>Our Core Team</h2>
+    <div class="team-grid">
+      <!-- Repeat for each core member -->
+      <div class="card">
+        <img src="/path/to/member1.jpg" alt="Member Name">
+        <h3>Member Name</h3>
+        <p>Role - Description here</p>
+        <p>📧 member@email.com<br>📞 1234567890</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Our Events</h2>
+    <div class="events-grid">
+      <!-- Repeat for each event -->
+      <div class="card">
+        <img src="/path/to/event1.jpg" alt="Teachers Day">
+        <h3>Teachers Day</h3>
+        <p>Annual celebration honouring our respected teachers with performances, awards and gratitude.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="horizon">
+    <h2><img src="/mnt/data/HORIZON LOGO.png" alt="Horizon Logo" style="height: 100px;"></h2>
+    <p>Horizon – Rising from the Ashes, is the grand cultural fest of RAIT featuring fashion shows, musical acts, dance, gaming and more.</p>
+
+    <h3>Apply for Horizon Events</h3>
+    <ul>
+      <li><a href="https://forms.gle/fashion-show">Fashion Show</a></li>
+      <li><a href="https://forms.gle/gaming">Gaming Events</a></li>
+      <!-- Add more as needed -->
+    </ul>
+
+    <h3>Artists Who've Performed</h3>
+    <div class="artists-grid">
+      <!-- Repeat for each artist -->
+      <div class="card">
+        <img src="/path/to/artist.jpg" alt="Artist Name">
+        <h4>Artist Name</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: suc@rait.ac.in | Phone: +91 9876543210</p>
+    <p>Address: Ramrao Adik Institute of Technology, Navi Mumbai</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!..." allowfullscreen=""></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Union Council, RAIT</p>
+  </footer>
+</body>
+</html>
